@@ -1,105 +1,204 @@
-
 body {
-    background-color:white ;
+    background-color: #f0f0f0;
     font-family: sans-serif;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-h1 { 
-    margin: 0px;
+a {
+    color: white;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    margin: 0;
     padding: 8px;
-    width: 16%;
-    text-shadow:
-    1px 1px 0px white
-    -1px 1px 0px white
-    1px -1px 0px white
-    -1px -1px 0px white
+    text-shadow: 1px 1px 0px white, -1px 1px 0px white, 1px -1px 0px white, -1px -1px 0px white;
+    color: white;
 }
 
 ul {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-#nav-ul > li{ 
-        padding: 20px;
-        border: 1px solid white;
-        border-radius: 30%;
- }
+#nav-ul {
+    display: flex;
+    gap: 20px;
+}
 
- #nav-ul > li > a{
-    color: white;
-    list-style: none;
+#nav-ul > li {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+#nav-ul > li > a {
+    color: white !important;
     text-decoration: none;
-    padding: 12px;
- }
+    font-weight: bold;
+}
+
+#nav-ul > li > a:hover {
+    color: lightgray !important;
+}
 
 body > header {
-    background-color:darkblue;
+    background-color: darkblue;
     display: flex;
     height: 12vh;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
 }
 
-#nav-ul { 
+header a {
+    color: white !important;
+}
+
+header a:hover {
+    color: lightgray !important;
+}
+
+#main-content {
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-#nav-ul > li { 
-    padding: 8px;
-}
-
-body > header {
-    color: azure;
-   }
-
-body > footer { 
-    background-color:darkblue ;
-}
-
-body > header > nav > ul { 
-    list-style: none;
-    text-decoration: none;
-}
-
-body > main article { 
+#main-content > div {
     width: 70%;
-    margin: auto;
+    max-width: 100%;
 }
 
-form { 
+body > main article {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+aside {
+    width: 20%;
+    max-width: 100%;
+}
+
+aside section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid darkblue;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+}
+
+aside h4 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+aside a {
+    color: white !important;
+}
+
+aside a:hover {
+    color: lightgray !important;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1a5db1;
+}
+
+body > footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-h2 { 
+#footer-ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+#footer-ul > div {
+    margin: 5px;
+}
+
+#footer-ul > div > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#footer-ul > div > ul > li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#footer-ul > div > ul > li > a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer-ul > div > ul > li > a:hover {
+    color: lightgray !important;
+}
+
+footer img {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+h2 {
     text-align: center;
     background-color: darkblue;
     color: white;
-}
-
-img { 
-    border-radius: 100%;
-}
-
-#footer-ul{
-    display: flex;
-    list-style: none;
-}
-
-#footer-ul > div > ul{
-    margin-left: 12px;
-}
-
-#footer-ul > div > ul > a{
-    color: white;
-    text-decoration: none;
-}
-
-#main-content{
-    display: flex;
-    justify-content: space-around;
-}
-
-#main-content > div{
-    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
 }
